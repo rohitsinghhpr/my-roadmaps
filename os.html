@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating System CheatSheet</title>
+</head>
+
+<body>
+    <section>
+        <h2>Overview</h2>
+        <ul>
+            <li>What is an Operating System?</li>
+            <li>Services provided by an Operating System?</li>
+            <li><a href="https://www.geeksforgeeks.org/types-of-operating-systems/">Types of OS</a>
+                <ul>
+                    <li>Batched OS</li>
+                    <li>Time Sharing OS</li>
+                    <li>Distributed OS</li>
+                    <li>Network OS</li>
+                    <li>Real Time OS</li>
+                </ul>
+            </li>
+            <li><a href="https://www.guru99.com/difference-between-rom-ram.html">RAM vs ROM</a></li>
+            <li><a href="https://www.guru99.com/sram-vs-dram-difference.html">SRAM & DRAM</a></li>
+            <li><a href="https://pediaa.com/what-is-the-difference-between-prom-eprom-and-eeprom/">PROM, EPROM &
+                    EEROM</a></li>
+            <li><a href="https://www.tutorialspoint.com/difference-between-virtualization-and-containerization">Virtualisation
+                    vs Containerisation</a></li>
+            <li><a href="https://www.howtogeek.com/56958/htg-explains-how-uefi-will-replace-the-bios/">BIOS vs UEFI</a>
+            </li>
+            <li><a
+                    href="https://www.howtogeek.com/193669/whats-the-difference-between-gpt-and-mbr-when-partitioning-a-drive/">MBR
+                    vs GPT</a></li>
+            <li>Important terms to know:
+                <ul>
+                    <li>Compiler</li>
+                    <li>Loader</li>
+                    <li>Assembler</li>
+                    <li>Interpreter</li>
+                    <li>System Calls</li>
+                    <li>Application Programming Interface</li>
+                    <li>Kernel</li>
+                    <li>Shell</li>
+                    <li>JVM</li>
+                    <li>Booting</li>
+                </ul>
+            </li>
+            <li><a
+                    href="https://www.geeksforgeeks.org/difference-between-multitasking-multithreading-and-multiprocessing/">MultiProgramming,
+                    MultiProcessing, MultiTasking & MultiThreading</a></li>
+            <li><a
+                    href="https://stackoverflow.com/questions/4537850/what-is-difference-between-monolithic-and-micro-kernel">Monolithic
+                    architecture vs MicroKernel arch</a></li>
+            <li><a
+                    href="https://micksmix.wordpress.com/2011/02/20/does-windows-have-a-microkernel-or-monolithic-kernel/">Why
+                    Windows kernel is more monolithic & not microkernel?</a></li>
+            <li><a href="https://www.geeksforgeeks.org/what-happens-when-we-turn-on-computer/">What happens when we turn
+                    on our Computer?</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Process Concept</h2>
+        <ul>
+            <li><a href="https://www.geeksforgeeks.org/difference-between-program-and-process/">Process vs Program</a>
+            </li>
+            <li><a href="https://www.geeksforgeeks.org/states-of-a-process-in-operating-systems/">Different State of
+                    process</a></li>
+            <li>Types of Process?</li>
+            <li><a href="https://www.geeksforgeeks.org/process-table-and-process-control-block-pcb/">PCB structure in
+                    detail</a></li>
+            <li><a href="https://www.tutorialspoint.com/how-does-a-process-look-like-in-memory">How does a process look
+                    like in memory?</a></li>
+            <li><a href="https://www.geeksforgeeks.org/difference-between-process-and-thread/">Process vs Threads</a>
+            </li>
+            <li>Process Scheduling
+                <ul>
+                    <li><a
+                            href="https://www.tutorialspoint.com/operating_system/os_process_scheduling.htm">Introduction</a>
+                    </li>
+                    <li>Scheduling Queue
+                        <ul>
+                            <li>Job Queue</li>
+                            <li>Ready Queue</li>
+                            <li>Device Queue</li>
+                        </ul>
+                    </li>
+                    <li>Scheduler
+                        <ul>
+                            <li>Schedulers are special system software which handle process scheduling in various ways.
+                                Their main task is to select the jobs to be submitted into the system and to decide
+                                which process to run. Schedulers are of three types</li>
+                            <li>Long-term Scheduler</li>
+                            <li>Short-term Scheduler</li>
+                            <li>Medium term Scheduler</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://stackoverflow.com/questions/868568/what-do-the-terms-cpu-bound-and-i-o-bound-mean">CPU
+                    Bound Process vs I/O Bound Process</a></li>
+            <li><a href="https://www.tutorialspoint.com/what-is-context-switching-in-operating-system">What is a Context
+                    Switch?</a></li>
+            <li>IPC
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/inter-process-communication-ipc/">Introduction</a></li>
+                    <li>by Shared Memory</li>
+                    <li>by Message Passing</li>
+                </ul>
+            </li>
+            <li><a
+                    href="https://www.tutorialspoint.com/inter_process_communication/inter_process_communication_pipes.htm">Define
+                    Pipe</a></li>
+            <li><a href="https://www.geeksforgeeks.org/maximum-number-zombie-process-system-can-handle/">Maximum number
+                    of Zombie process a system can handle?</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Thread Concepts</h2>
+        <ul>
+            <li><a href="https://www.studytonight.com/operating-system/multithreading">What is a Thread?</a></li>
+            <li><a href="https://www.geeksforgeeks.org/benefits-of-multithreading-in-operating-system/">Benefits of
+                    Multithreading?</a></li>
+            <li><a href="https://www.quora.com/What-are-some-best-examples-of-multithreaded-applications">Example of
+                    MultiThreading</a></li>
+            <li><a href="https://www.studytonight.com/operating-system/multithreading">Models:</a>
+                <ul>
+                    <li>Many to One Model</li>
+                    <li>One to One Model</li>
+                    <li>Many to Many Model</li>
+                    <li>Best Model: ????</li>
+                </ul>
+            </li>
+            <li><a href="https://stackoverflow.com/questions/1718465/optimal-number-of-threads-per-core">Optimal number
+                    of threads required for a process?</a></li>
+            <li><a href="https://blogs.grammatech.com/multi-core-processors-headache-for-multithreaded-code">Effect of
+                    Multiple cores on MutiThreading?</a></li>
+            <li>Thread vs Process [Again]</li>
+            <li><a href="https://stackoverflow.com/questions/7026507/why-are-static-variables-considered-evil">Why C++
+                    Static Variables are dangerous in real life OS?</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Process Scheduling</h2>
+        <ul>
+            <li><strong>Why do we need it?</strong>
+                <ul>
+                    <li>Process Scheduling is an OS task that schedules processes of different states like ready,
+                        waiting, and running. Process scheduling allows the OS to allocate a time interval of CPU
+                        execution for each process. Another important reason for using a process scheduling system is
+                        that it keeps the CPU busy all the time. This allows you to get the minimum response time for
+                        programs.</li>
+                </ul>
+            </li>
+            <li>CPU Burst Cycle</li>
+            <li>CPU Scheduler
+                <ul>
+                    <li>Pre-Emptive Scheduling</li>
+                    <li>Non-PreEmptive Scheduling</li>
+                    <li>Advantages/Disadvantages</li>
+                </ul>
+            </li>
+            <li>Dispatcher
+                <ul>
+                    <li>Role of Dispatcher</li>
+                    <li>Dispatch Latency</li>
+                </ul>
+            </li>
+            <li>Scheduling Criteria
+                <ul>
+                    <li>CPU utilization</li>
+                    <li>Throughput</li>
+                    <li>TAT [Turn Around Time]</li>
+                    <li>Waiting Time</li>
+                    <li>Response Time</li>
+                </ul>
+            </li>
+            <li>Scheduling Algorithms
+                <ul>
+                    <li>FCFS</li>
+                    <li>SJFS</li>
+                    <li>Priority-based</li>
+                    <li>Round-Robin</li>
+                    <li>MLQS</li>
+                    <li>MLFQS</li>
+                    <li>Which Algorithm is used in the real-world OS scenario?</li>
+                </ul>
+            </li>
+            <li>Important terms to know:
+                <ul>
+                    <li>Starvation</li>
+                    <li>Ageing</li>
+                </ul>
+            </li>
+            <li>How to prevent Starvation?</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Synchronisation</h2>
+        <ul>
+            <li><strong><a href="https://www.studytonight.com/operating-system/process-synchronization">Why Process
+                        Coordination/Synchronization is needed?</a></strong>
+                <ul>
+                    <li>Data Inconsistency
+                        <ul>
+                            <li>Race Condition</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://www.geeksforgeeks.org/logical-and-physical-address-in-operating-system/">Physical
+                    Address Space vs Logical Address Space</a></li>
+            <li>Important terms to know:
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/mutual-exclusion-in-synchronization/">Mutual
+                            Exclusion</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/g-fact-70/">Critical Section</a></li>
+                </ul>
+            </li>
+            <li>Critical Section Problem, Peterson Solution
+                <ul>
+                    <li>Follow <a
+                            href="https://www.youtube.com/watch?v=YwqexcfbucE&amp;list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD">YouTube
+                            Video: [KNOWLEDGE GATE]</a></li>
+                </ul>
+            </li>
+            <li>Why Preemptive Kernel is better than Non-Preemptive Kernel?</li>
+            <li>Semaphore
+                <ul>
+                    <li>Binary Semaphore/Mutex Locks</li>
+                    <li>Counting Semaphore</li>
+                </ul>
+            </li>
+            <li>Important terms to know:
+                <ul>
+                    <li>Busy Waiting</li>
+                    <li>Spin Lock</li>
+                </ul>
+            </li>
+            <li>Example of Busy Waiting &amp; Spin Lock</li>
+            <li><a href="https://www.geeksforgeeks.org/semaphores-in-process-synchronization/">How to implement Binary
+                    Semaphore in real-world coding implementation?</a></li>
+            <li>What is DeadLock &amp; Starvation?</li>
+            <li>Bounded Buffer, Reader-Writer Problem &amp; Dining Philosopher Problem
+                <ul>
+                    <li>Follow <a
+                            href="https://www.youtube.com/watch?v=YwqexcfbucE&amp;list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD">YouTube
+                            Video: [KNOWLEDGE GATE]</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>DeadLock</h2>
+        <ul>
+            <li><a href="https://www.cs.rpi.edu/academics/courses/fall04/os/c10/">What is Deadlock?</a>
+                <ul>
+                    <li>MultiThreaded programs are good candidates for deadlock because multiple threads can compete for
+                        shared resources.</li>
+                </ul>
+            </li>
+            <li><a
+                    href="https://stackoverflow.com/questions/41204406/what-is-effect-of-deadlock-on-other-processes-which-are-not-involve-in-deadlock/41713812">Effects
+                    of Deadlock?</a>
+                <ul>
+                    <li>If the operating system has a deadlock prevention or detection system in place, this will have a
+                        negative impact on performance (slow the system down) because whenever a process or thread
+                        requests a resource, the system will have to check whether granting this request could cause a
+                        potential deadlock situation.</li>
+                </ul>
+            </li>
+            <li>Necessary Conditions:
+                <ul>
+                    <li>Mutual Exclusion</li>
+                    <li>Hold &amp; Wait</li>
+                    <li>No Preemption</li>
+                    <li>Circular Wait</li>
+                </ul>
+            </li>
+            <li>Methods for Deadlock handling
+                <ul>
+                    <li>Prevention or Avoidance
+                        <ul>
+                            <li>Make sure at least one condition should not meet
+                                <ul>
+                                    <li>Mutual Exclusion</li>
+                                    <li>Hold &amp; Wait</li>
+                                    <li>No Preemption</li>
+                                    <li>Circular Wait</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Detection or Recovery
+                        <ul>
+                            <li>Banker's Algorithm
+                                <ul>
+                                    <li>Safe State
+                                        <ul>
+                                            <li>Follow Video [Easy Engineering Classes]</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Ostrich Algorithm</li>
+                            <li>Resource Preemption</li>
+                        </ul>
+                    </li>
+                    <li>Ignorance</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Memory-Management Strategies</h2>
+        <ul>
+            <li>Imp Points
+                <ul>
+                    <li>CPU can directly access Registers and Main Memory</li>
+                    <li>Protection of Memory space is handled by Hardware.</li>
+                    <li>OS loads Base and Limit registers</li>
+                    <li>Mapping from Logical to Physical address is done by MMU[Memory Management Unit]</li>
+                    <li>OS memory is categorized into 3 divisions:
+                        <ul>
+                            <li>for the resident of OS</li>
+                            <li>User Processes</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Logical vs Physical address space</li>
+            <li>What is Swapping?
+                <ul>
+                    <li>Ex- Priority based Scheduling</li>
+                    <li>Done by Dispatcher</li>
+                    <li>Context Switch time in swapping is very high</li>
+                    <li>OS can't swap process that has pending Input/output.</li>
+                </ul>
+            </li>
+            <li>Imp Topic to Cover:
+                <ul>
+                    <li><a
+                            href="https://www.youtube.com/watch?v=YwqexcfbucE&amp;list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD">Follow
+                            KNOWLEDGE GATE Video</a>
+                        <ul>
+                            <li>Memory Allocation
+                                <ul>
+                                    <li>Contiguous Memory Allocation
+                                        <ul>
+                                            <li>Address Translation: Base and limit register</li>
+                                            <li>Fixed Partitioning</li>
+                                            <li>Variable Partitioning</li>
+                                            <li>Dynamic storage allocation problem
+                                                <ul>
+                                                    <li>Best Fit</li>
+                                                    <li>Worst Fit</li>
+                                                    <li>First Fit</li>
+                                                </ul>
+                                            </li>
+                                            <li>Internal Fragmentation</li>
+                                            <li>External Fragmentation
+                                                <ul>
+                                                    <li>Remedies:
+                                                        <ul>
+                                                            <li>Compaction</li>
+                                                            <li>Non-Contiguous Allocation
+                                                                <ul>
+                                                                    <li>Paging</li>
+                                                                    <li>Segmentation</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>Paging
+                                        <ul>
+                                            <li>Page table</li>
+                                            <li>Page No.</li>
+                                            <li>Page Offset</li>
+                                            <li>Page table Limit Register, PTLR</li>
+                                        </ul>
+                                    </li>
+                                    <li>Segmentation
+                                        <ul>
+                                            <li>Segment table</li>
+                                            <li>Base register</li>
+                                            <li>Limit register</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://gateoverflow.in/178062/paging-os-galvin-book-page-no-332">Why Paging increases the
+                    context-switch time?</a></li>
+            <li><a href="https://practice.geeksforgeeks.org/problems/page-and-frames">Page vs Frame?</a></li>
+            <li><a href="https://stackoverflow.com/questions/37825859/cache-miss-a-tlb-miss-and-page-fault">What is a
+                    TLB
+                    miss?</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Virtual-Memory Mgmt</h2>
+        <ul>
+            <li>Goal of mem. Mgmt
+                <ul>
+                    <li>To keep multiple processes in memory to allow multiProgramming.</li>
+                </ul>
+            </li>
+            <li>Virtual Memory
+                <ul>
+                    <li>What?</li>
+                    <li>Why?</li>
+                    <li>Where it is physically located?</li>
+                    <li>How it is Implemented?
+                        <ul>
+                            <li>Demand Paging
+                                <ul>
+                                    <li>Strategy to only load pages when they are needed
+                                        <ul>
+                                            <li>Paging + Swapping</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Advantages/benefits:
+                        <ul>
+                            <li>user can write program for an extremely large virtual address space</li>
+                            <li>CPU Utilisation &amp; Throughput increases &amp; Response Time, Turnaround Time (TAT)
+                                remains same.</li>
+                            <li>Less I/O would be needed to load or swap user programs into memory, so each user program
+                                would run faster.</li>
+                            <li>Degree of Multiprogramming increases</li>
+                            <li>allows files and memory to be shared by 2 or more processes through page sharing</li>
+                        </ul>
+                    </li>
+                    <li>If it is used carelessly, it can decrease performance.</li>
+                </ul>
+            </li>
+            <li><a href="https://www.youtube.com/watch?v=Agi0u5Png_U">Demand Paging</a>
+                <ul>
+                    <li>paging + swapping</li>
+                    <li>Lazy Swapper</li>
+                    <li>pager</li>
+                    <li>page fault
+                        <ul>
+                            <li>access to a page that is not in memory</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://practice.geeksforgeeks.org/problems/what-is-pure-demand-paging">Pure Demand paging</a>
+            </li>
+            <li>Swap Space:
+                <ul>
+                    <li>Section of hard disk used for implementing Virtual Mem. is swap space</li>
+                </ul>
+            </li>
+            <li>What is Page Fault?</li>
+            <li>Page Replacement Algo:
+                <ul>
+                    <li>FIFO
+                        <ul>
+                            <li>belady's anomaly</li>
+                        </ul>
+                    </li>
+                    <li>Optimal Page Replacement</li>
+                    <li>LRU</li>
+                </ul>
+            </li>
+            <li>What is Frame rate?</li>
+            <li><a href="https://practice.geeksforgeeks.org/problems/thrashing-in-os">[Most asked Question]
+                    Thrashing</a>
+                <ul>
+                    <li>What?
+                        <ul>
+                            <li>Low CPU Utilisation -> Degree of Multiprogramming increases -> More Page Fault -> Cycle
+                                Continues -> Thrashing occurs -> Page fault occurs tremendously -> CPU utilisation
+                                decrease sharply.</li>
+                        </ul>
+                    </li>
+                    <li>Cause of Thrashing?</li>
+                    <li>Solution to thrashing?
+                        <ul>
+                            <li>use Priority based Replacement Algo</li>
+                            <li>Allocate the exact no. of frames that are actually required</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Can we replace Physical memory i.e. RAM with Virtual memory? [HOMEWORK]</li>
+            <li>Is performance of Virtual memoryHere's the "Virtual-Memory Mgmt" section converted into HTML code as a
+                numbered list:</li>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Storage Management</h2>
+        <ul>
+            <li>Optional
+                <ul>
+                    <li><a
+                            href="https://www.slideshare.net/DeepikaT13/storage-management-in-operating-system">Resource1</a>
+                    </li>
+                    <li><a
+                            href="https://www.slideshare.net/arjunk007/secondary-storage-structureoperating-system-concepts">Resource2</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2><a href="https://www.os-book.com/OS9/slide-dir/index.html">PPT</a></h2>
+    </section>
+</body>
+
+</html>

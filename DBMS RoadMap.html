@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS RoadMap</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Resources:</h2>
+        <ul>
+            <li><a href="https://github.com/donnemartin/system-design-primer#database">SystemDesign Primer[Database
+                    Section]</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Introduction:</h2>
+        <ul>
+            <li><a href="https://www.javatpoint.com/what-is-database">what is a Database?</a></li>
+            <li><a href="https://www.guru99.com/what-is-dbms.html">What is DBMS?</a></li>
+            <li><a href="https://www.geeksforgeeks.org/need-for-dbms/">Why do we need DBMS?</a></li>
+            <li><a href="https://www.javatpoint.com/dbms-vs-files-system">File management system vs DBMS</a></li>
+            <li><a href="https://practice.geeksforgeeks.org/problems/what-are-the-functions-of-a-dba">What is Database
+                    Admin &amp; its Functions?</a></li>
+            <li><a
+                    href="https://www.geeksforgeeks.org/difference-between-two-tier-and-three-tier-database-architecture/">Database
+                    Tier-2/Tier-3 Architecture</a></li>
+            <li>
+                Database Languages
+                <ul>
+                    <li>DCL</li>
+                    <li>DDL</li>
+                    <li>DML</li>
+                    <li>TCL</li>
+                </ul>
+            </li>
+            <li>
+                Imp Terms:
+                <ul>
+                    <li>Instance</li>
+                    <li>Schema</li>
+                    <li>Sub-Schema</li>
+                </ul>
+            </li>
+            <li>How DBMS is implemented? <b>Homework</b></li>
+            <li><a href="https://afteracademy.com/blog/what-is-data-abstraction-in-dbms-and-what-are-its-three-levels">What
+                    is Data abstraction in DBMS</a></li>
+            <li><a href="https://afteracademy.com/blog/what-is-data-abstraction-in-dbms-and-what-are-its-three-levels">3
+                    level of Data Abstraction</a></li>
+            <li><a href="https://www.tutorialspoint.com/Referential-Integrity-Rule-in-RDBMS">What is Referential
+                    Integrity</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>RDMS</h2>
+        <ul>
+            <li><a
+                    href="https://www.quora.com/How-does-a-relational-DBMS-internally-store-its-data-In-what-type-of-data-structure-How-does-it-offer-the-rapid-retrieval-without-loading-the-entire-database-into-the-main-memory-I-have-heard-many-DBMS-use-B-trees">What
+                    is RDBMS & how it is stored in memory?</a></li>
+            <li>
+                what is the meaning of world "Relational" in RDBMS ?
+                <ul>
+                    <li>HOMEWORK</li>
+                </ul>
+            </li>
+            <li><a href="https://www.relationaldbdesign.com/database-design/module6/three-relationship-types.php">Degree
+                    of Relation</a>
+                <ul>
+                    <li>1:1</li>
+                    <li>1:M</li>
+                    <li>M:M</li>
+                </ul>
+            </li>
+            <li><a
+                    href="https://www.geeksforgeeks.org/types-of-keys-in-relational-model-candidate-super-primary-alternate-and-foreign/">Keys</a>
+                <ul>
+                    <li>Primary Key</li>
+                    <li>Foreign Key</li>
+                    <li>Candidate Key</li>
+                    <li>Alternate Key</li>
+                    <li>Super Key</li>
+                    <li>Secondary Key</li>
+                </ul>
+            </li>
+            <li><a href="https://www.tutorialspoint.com/dbms/dbms_data_schemas.htm">Database Schema</a>
+                <ul>
+                    <li>Physical Database Schema</li>
+                    <li>Logical Database Schema</li>
+                </ul>
+            </li>
+            <li><a href="https://www.geeksforgeeks.org/mapping-from-er-model-to-relational-model/">Schema Diagrams</a>
+                <ul>
+                    <li>Relational Model</li>
+                    <li>ER Diagram</li>
+                    <ul>
+                        <li>ER to Relational Model conversion</li>
+                    </ul>
+                </ul>
+            </li>
+            <li><a href="https://www.guru99.com/relational-algebra-dbms.html">Relational operations:</a>
+                <ul>
+                    <li>Select</li>
+                    <li>Project</li>
+                    <li>Union</li>
+                    <li>Set Different</li>
+                    <li>Cartesian Product</li>
+                    <li>Rename</li>
+                </ul>
+            </li>
+            <li>
+                SQL
+                <ul>
+                    <li><a href="https://www.w3schools.com/sql/sql_intro.asp">What is SQL</a></li>
+                    <li><a href="https://www.upgrad.com/blog/sql-vs-mysql/">Difference between SQL AND MYSQL</a></li>
+                    <li><a href="https://www.educba.com/sql-keywords/">Important Keywords</a></li>
+                    <li><a href="https://www.educba.com/cheat-sheet-sql/?source=leftnav">Cheatsheet SQL</a></li>
+                    <li><a href="https://www.educba.com/composite-key-in-sql/?source=leftnav">Composite key in SQL</a>
+                    </li>
+                    <li><a href="https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/">What is
+                            Join &amp; its types</a>
+                        <ul>
+                            <li>Inner Join</li>
+                            <li>Left Join</li>
+                            <li>Right Join</li>
+                            <li>Full Join</li>
+                            <li>Self Join</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.geeksforgeeks.org/sql-views/">What is a View</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/sql-trigger-student-database/">What is a trigger</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/difference-between-primary-key-and-unique-key/">Difference
+                            Between Unique &amp; Primary key in SQL</a></li>
+                    <li><a href="https://www.w3schools.com/sql/sql_injection.asp">What is SQL Injection</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/difference-between-delete-and-truncate/">Delete vs
+                            Truncate</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/mysql-grant-revoke-privileges/">SQL Privileges</a></li>
+                    <li><a href="https://www.tutorialspoint.com/sql/sql-sub-queries.htm">What do you mean by
+                            Subquery</a></li>
+                    <li><a href="https://www.guru99.com/clustered-vs-non-clustered-index.html">What is the difference
+                            between clustered and non-clustered indexes?</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/what-is-cursor-in-sql/">What is a Cursor?</a></li>
+                    <li>Query Examples: [DO BY YOURSELF]
+                        <ul>
+                            <li>Write an SQL query to get the third maximum salary of an employee from a table named
+                                employee_table.</li>
+                            <li>Write an SQL query to find names of employees starting with 'A'?</li>
+                            <li>How can you create an empty table from an existing table?</li>
+                            <li>How to fetch common records from two tables?</li>
+                            <li>How to fetch alternate records from a table?</li>
+                            <li>How to select unique records from a table?</li>
+                            <li>What is the command used to fetch the first 5 characters of a string?</li>
+                            <li>Which operator is used in a query for pattern matching?</li>
+                            <li>Practice SQL, so that you can write any query, nested query, correlated query asked by
+                                Interviewer.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://www.guru99.com/indexing-in-database.html">What is Index in DBMS & its types ?</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Relational Database Design:</h2>
+        <ul>
+            <li><a
+                    href="https://www.microfocus.com/documentation/xdbc/win20/GUID-82D58958-278F-482C-B76F-AAF94A28DCCF.html">Features
+                    of Good Relational Design</a></li>
+            <li><a href="https://www.guru99.com/dbms-functional-dependency.html">What is Functional Dependency?</a>
+                <ul>
+                    <li>Types:
+                        <ul>
+                            <li>Trivial</li>
+                            <li>Non-Trivial</li>
+                            <li>Fully-Functional Dependency</li>
+                            <li>Partial</li>
+                            <li>Transitive</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://www.guru99.com/database-normalization.html">What is Normalisation?</a></li>
+            <li><a href="https://medium.com/@bbrumm/what-is-the-purpose-of-database-normalisation-8070b2948d70">Purpose
+                    of Normalisation?</a></li>
+            <li><a
+                    href="https://dba.stackexchange.com/questions/194631/how-does-normalization-fix-the-three-types-of-update-anomalies">What
+                    are 3 anomalies resolved by normalisation?</a></li>
+            <li>Types of Normalisation
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/first-normal-form-1nf/">1NF</a>
+                        <ul>
+                            <li>Purpose and Steps to convert?</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.geeksforgeeks.org/second-normal-form-2nf/">2NF</a>
+                        <ul>
+                            <li>Purpose and Steps to convert?</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.geeksforgeeks.org/third-normal-form-3nf/">3NF</a>
+                        <ul>
+                            <li>Purpose and Steps to convert?</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.geeksforgeeks.org/boyce-codd-normal-form-bcnf/">BCNF</a>
+                        <ul>
+                            <li>Purpose and Steps to convert?</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Storage and File Structure:</h2>
+        <ul>
+            <li><a href="https://www.tutorialspoint.com/dbms/dbms_storage_system.htm">Storage System</a></li>
+            <li><a href="https://www.tutorialspoint.com/dbms/dbms_file_structure.htm">File Structure</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Transaction Management:</h2>
+        <ul>
+            <li><a href="https://www.tutorialspoint.com/dbms/dbms_transaction.htm">What is a transaction?</a>
+                <ul>
+                    <li><a href="https://www.gatevidyalay.com/transaction-states-in-dbms/">State of Transaction</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.studytonight.com/dbms/tcl-command.php">IMP terms:</a>
+                <ul>
+                    <li>Commit</li>
+                    <li>Rollback</li>
+                    <li>Savepoint</li>
+                </ul>
+            </li>
+            <li><a href="https://www.geeksforgeeks.org/acid-properties-in-dbms/">ACID Properties</a></li>
+            <li><a
+                    href="https://ashutoshtripathi.com/2017/11/27/implementation-of-atomicity-and-durability-using-shadow-copy/">How
+                    to implement Atomicity in Transactions?</a></li>
+            <li><a href="https://www.geeksforgeeks.org/concurrency-problems-in-dbms-transactions/">Concurrent
+                    Transaction?</a>
+                <ul>
+                    <li>Problem of Concurrent transaction?
+                        <ul>
+                            <li>Lost Update Conflict</li>
+                            <li>Dirty Read Problem</li>
+                            <li>Unrepeatable Read Problem</li>
+                            <li>Incorrect Summary Problem</li>
+                        </ul>
+                    </li>
+                    <li>Advantages
+                        <ul>
+                            <li>Reduced Wait time</li>
+                            <li>High throughput</li>
+                            <li>High resource utilisation</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Schedule
+                <ul>
+                    <li>Types:
+                        <ul>
+                            <li>Serial</li>
+                            <li>Complete</li>
+                            <li>Recoverable</li>
+                            <li>Cascadeless</li>
+                            <li>Strict</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.javatpoint.com/dbms-conflict-serializable-schedule">What is Conflict
+                            Operation?</a>
+                        <ul>
+                            <li>How to find whether Schedules are conflicting or not?</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://www.tutorialspoint.com/dbms/dbms_concurrency_control.htm">Concurrency Control?</a>
+                <ul>
+                    <li>Purpose?
+                        <ul>
+                            <li>Shared Lock</li>
+                            <li>Exclusive Lock</li>
+                        </ul>
+                    </li>
+                    <li>2-Phase Locking Protocol [IMP]</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>DeadLock:</h2>
+        <ul>
+            <li><a href="https://www.geeksforgeeks.org/deadlock-in-dbms/">What is a Deadlock?</a>
+                <ul>
+                    <li>Example?</li>
+                </ul>
+            </li>
+            <li>Deadlock Detection
+                <ul>
+                    <li>HOMEWORK</li>
+                </ul>
+            </li>
+            <li>How to Prevent Deadlock (already discussed on Operating System Cheatsheet)
+                <ul>
+                    <li>Mutual Exclusion</li>
+                    <li>Hold and Wait</li>
+                    <li>No PreEmption</li>
+                    <li>Circular Wait</li>
+                </ul>
+            </li>
+            <li><a
+                    href="https://www.geeksforgeeks.org/introduction-to-timestamp-and-deadlock-prevention-schemes-in-dbms/">Other
+                    Techniques to prevent Deadlock</a>
+                <ul>
+                    <li>Use Timestamp
+                        <ul>
+                            <li>Wait-Die Scheme</li>
+                            <li>Wound-Wait Scheme</li>
+                            <li>Timeout Based Scheme</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://www.geeksforgeeks.org/starvation-in-dbms/">What is Starvation and its reason?</a></li>
+            <li><a href="https://www.geeksforgeeks.org/recovery-from-deadlock-in-operating-system/">Deadlock
+                    Recovery</a>
+                <ul>
+                    <li>Selection of Victim</li>
+                    <li>Rollback</li>
+                    <li>Starvation</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Must Do[For System Design Interview]:</h2>
+        <ul>
+            <li>SQL vs NoSQL
+                <ul>
+                    <li><a href="https://www.mongodb.com/nosql-explained/nosql-vs-sql">Resources to Follow</a></li>
+                    <li><a href="https://www.xplenty.com/blog/which-database/">Which Modern Database Is Right for Your
+                            Use Case?</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.freecodecamp.org/news/understanding-database-scaling-patterns/">Scaling
+                    Patterns</a></li>
+            <li><a
+                    href="https://www.analyticsvidhya.com/blog/2020/08/a-beginners-guide-to-cap-theorem-for-data-engineering/">CAP
+                    theorem</a></li>
+            <li><a href="https://medium.com/better-programming/scaling-sql-nosql-databases-1121b24506df">Scaling RDBMS
+                    and NoSQL</a></li>
+            <li><a href="http://jlamere.github.io/databases/">What DB to use</a></li>
+            <li><a
+                    href="https://medium.com/@denisanikin/what-an-in-memory-database-is-and-how-it-persists-data-efficiently-f43868cff4c1">In-memory
+                    Database</a></li>
+            <li><a href="https://neo4j.com/developer/graph-database/">Graph Database</a></li>
+            <li>In-depth Indexing (Optional)
+                <ul>
+                    <li><a href="https://www.freecodecamp.org/news/database-indexing-at-a-glance-bb50809d48bd/">In-depth
+                            Indexing</a></li>
+                </ul>
+            </li>
+            <li><a
+                    href="https://www.datadriveninvestor.com/2020/05/28/the-master-slave-database-concept-for-beginners/">Master-Slave</a>
+            </li>
+            <li><a href="https://intellipaat.com/community/6605/master-master-vs-master-slave-database-architecture">Master-Slave
+                    vs Master-Master</a></li>
+            <li><a href="https://www.dataversity.net/acid-vs-base-the-shifting-ph-of-database-transaction-processing/">ACID
+                    vs BASE</a></li>
+        </ul>
+
+    </section>
+</body>
+
+</html>
